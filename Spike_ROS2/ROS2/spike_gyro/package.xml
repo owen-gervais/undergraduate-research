@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>spike_gyro</name>
+  <version>1.0.0</version>
+  <description>Minimal pitch, roll, and yaw gyroscope publisher</description>
+  <maintainer email="o.s.gervais@gmail.com">ubuntu</maintainer>
+  <license>Apache License 2.0</license>
+  
+  <depend>spike_interfaces</depend>
+  <depend>rclpy</depend>
+  <depend>serial</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
