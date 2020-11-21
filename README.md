@@ -9,3 +9,6 @@ This is where in-development packages for communication with the SPIKE Prime and
 
 ### Ubuntu_Server
 This repo contains instructions on getting a Raspberry Pi setup wtih UbuntuServer, follow the steps in ROS2_setup in order to get a development environment going.
+
+### Pre-Setup VM and UbuntuServer images
+Click [here](https://drive.google.com/drive/folders/1jaeOl53kcfiK5GLCMRy_wXDmsG37tWbi?usp=sharing) if you wish to download a Ubuntu 20.04 LTS vm or preformatted Ubuntu Server img. 
