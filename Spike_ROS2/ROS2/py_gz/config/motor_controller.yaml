@@ -1,0 +1,10 @@
+joint_state_controller:
+  ros__parameters:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+cart_pole_controller:
+  ros__parameters:
+    type: position_controllers/JointGroupPositionController
+    joints:
+       - joint1

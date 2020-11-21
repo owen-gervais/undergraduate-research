@@ -1,0 +1,168 @@
+<robot name="onshape">
+
+
+    <link name="motor">
+
+        <visual>
+            <origin 
+                xyz="-0.00965501 -0.018152 -0.00590974" 
+                rpy="-1.5708 1.38778e-16 1.38778e-16" />
+            <geometry>
+                <mesh 
+                    filename="$(find py_gz)/meshes/axle.stl"/>
+            </geometry>
+            <material 
+                name="electric,_motor_small_angular_-_spike_prime-_axle_material">
+                <color 
+                    rgba="0.317647 0.862745 0.921569 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin 
+                xyz="-0.00965501 -0.018152 -0.00590974" 
+                rpy="-1.5708 1.38778e-16 1.38778e-16" />
+            <geometry>
+                <mesh 
+                    filename="$(find py_gz)/meshes/axle.stl"/>
+            </geometry>
+            <material name="electric,_motor_small_angular_-_spike_prime-_axle_material">
+                <color 
+                    rgba="0.317647 0.862745 0.921569 1.0"/>
+            </material>
+        </collision>
+
+        <visual>
+            <origin 
+                xyz="-0.00965501 -0.018152 -0.00590974" 
+                rpy="1.5708 0.57871 3.14159" />
+            <geometry>
+                <mesh 
+                    filename="$(find py_gz)/meshes/motor.stl"/>
+            </geometry>
+            <material 
+                name="electric,_motor_small_angular_-_spike_prime_material">
+                <color 
+                    rgba="0.317647 0.862745 0.921569 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin 
+                xyz="-0.00965501 -0.018152 -0.00590974" 
+                rpy="1.5708 0.57871 3.14159" />
+            <geometry>
+                <mesh 
+                    filename="$(find py_gz)/meshes/motor.stl"/>
+            </geometry>
+            <material 
+                name="electric,_motor_small_angular_-_spike_prime_material">
+                <color 
+                    rgba="0.317647 0.862745 0.921569 1.0"/>
+            </material>
+        </collision>
+        
+        <inertial>
+            <origin 
+                xyz="-0.0213738 -0.00563725 0.0120274" 
+                rpy="0 0 0"/>
+            <mass 
+                value="0.0358303" />
+            <inertia 
+                ixx="1.46618e-05" 
+                ixy="-4.78078e-07"  
+                ixz="6.2444e-07" 
+                iyy="1.4634e-05" 
+                iyz="8.35965e-07" 
+                izz="3.84556e-06" />
+        </inertial>
+
+    </link>
+
+    <link name="wheel">
+        
+        <visual>
+            <origin 
+                xyz="1.73472e-18 0.003875 1.73472e-18" 
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh 
+                    filename="$(find py_gz)/meshes/wheel.stl"/>
+            </geometry>
+                <material 
+                    name="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_material">
+                <color 
+                    rgba="0.317647 0.862745 0.921569 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin 
+                xyz="1.73472e-18 0.003875 1.73472e-18" 
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh 
+                    filename="$(find py_gz)/meshes/wheel.stl"/>
+            </geometry>
+            <material 
+                name="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_material">
+                <color 
+                    rgba="0.317647 0.862745 0.921569 1.0"/>
+            </material>
+        </collision>
+
+        <inertial>
+            <origin 
+                xyz="2.40117e-18 0.003875 7.41654e-18" 
+                rpy="0 0 0"/>
+            <mass 
+                value="0.0154239" />
+            <inertia 
+                ixx="4.02997e-06" 
+                ixy="0"  
+                ixz="0" 
+                iyy="7.70244e-06" 
+                iyz="0" 
+                izz="4.02997e-06" />
+        </inertial>
+
+    </link>
+
+    <joint name="joint1" type="revolute">
+        <origin 
+            xyz="-0.00965501 0.012848 -0.00590974" 
+            rpy="0 1.38778e-16 1.38778e-16" />
+        <parent 
+            link="motor" />
+        <child 
+            link="wheel" />
+        <axis 
+            xyz="0 -1 0"/>
+        <limit 
+            lower = "0"
+            upper = "2"
+            effort="1" 
+            velocity="20" />
+        <joint_properties 
+            friction="0.0"/>
+    </joint>
+
+    <gazebo>
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+            <robot_sim_type>gazebo_ros2_control/DefaultRobotHWSim</robot_sim_type>
+            <parameters>$(find py_gz)/config/motor_controller.yaml</parameters>
+        </plugin>
+    </gazebo>
+  
+    <transmission name="motor_to_wheel_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint1">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="slider_to_cart_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+</robot>
