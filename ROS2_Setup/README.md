@@ -29,3 +29,19 @@ Otherwise install the version with GUI tools,
 sudo apt install ros-foxy-desktop
 ```
 
+## Installing colcon
+Colcon is the tool used to build ROS2 packages, it does not come installed in ROS so you must install standalone.
+```bash
+sudo apt install python3-colcon-common-extensions
+```
+
+## Creating your dev_ws
+In order to build packages in ROS you must create a workspace
+
+```bash
+mkdir -p ~/dev_ws/src
+
+cd ~/dev_ws/src
+
+colcon build
+```
