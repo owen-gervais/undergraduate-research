@@ -45,3 +45,4 @@ cd ~/dev_ws/src
 
 colcon build
 ```
+You should be now able to setup and build your own packages in ROS2
