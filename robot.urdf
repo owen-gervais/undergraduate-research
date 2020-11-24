@@ -1,0 +1,135 @@
+<robot name="onshape">
+<link name="assembly_1_1">
+<visual>
+<origin xyz="0.0723616 -0.0108919 -0.00483409" rpy="-0.57871 -1.63234e-16 1.5708" />
+<geometry>
+<mesh filename="package://electric,_hub_-_spike_prime.stl"/>
+</geometry>
+<material name="electric,_hub_-_spike_prime_material">
+<color rgba="1 0.831373 0.00392157 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0723616 -0.0108919 -0.00483409" rpy="-0.57871 -1.63234e-16 1.5708" />
+<geometry>
+<mesh filename="package://electric,_hub_-_spike_prime.stl"/>
+</geometry>
+<material name="electric,_hub_-_spike_prime_material">
+<color rgba="1 0.831373 0.00392157 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0639359 -0.0108588 0.00806242" rpy="0 0 0"/>
+<mass value="0.133101" />
+<inertia ixx="8.50984e-05" ixy="5.0949e-11"  ixz="8.34088e-12" iyy="5.87749e-05" iyz="-2.99785e-05" izz="8.52317e-05" />
+</inertial>
+</link>
+
+<link name="lego_motors:_small_angular_motor_1">
+<visual>
+<origin xyz="0.0659825 0.0317331 0.00492998" rpy="-1.5708 1.38778e-16 1.38778e-16" />
+<geometry>
+<mesh filename="package://electric,_motor_small_angular_-_spike_prime-_axle.stl"/>
+</geometry>
+<material name="electric,_motor_small_angular_-_spike_prime-_axle_material">
+<color rgba="0.317647 0.862745 0.921569 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0659825 0.0317331 0.00492998" rpy="-1.5708 1.38778e-16 1.38778e-16" />
+<geometry>
+<mesh filename="package://electric,_motor_small_angular_-_spike_prime-_axle.stl"/>
+</geometry>
+<material name="electric,_motor_small_angular_-_spike_prime-_axle_material">
+<color rgba="0.317647 0.862745 0.921569 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0659825 0.0317331 0.00492998" rpy="1.5708 0.57871 3.14159" />
+<geometry>
+<mesh filename="package://electric,_motor_small_angular_-_spike_prime.stl"/>
+</geometry>
+<material name="electric,_motor_small_angular_-_spike_prime_material">
+<color rgba="0.317647 0.862745 0.921569 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0659825 0.0317331 0.00492998" rpy="1.5708 0.57871 3.14159" />
+<geometry>
+<mesh filename="package://electric,_motor_small_angular_-_spike_prime.stl"/>
+</geometry>
+<material name="electric,_motor_small_angular_-_spike_prime_material">
+<color rgba="0.317647 0.862745 0.921569 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0542636 0.0442479 0.0228672" rpy="0 0 0"/>
+<mass value="0.0358303" />
+<inertia ixx="1.46618e-05" ixy="-4.78078e-07"  ixz="6.2444e-07" iyy="1.4634e-05" iyz="8.35965e-07" izz="3.84556e-06" />
+</inertial>
+</link>
+
+<joint name="38626c1f-f753-45d4-956d-35b5b2eb7e09_fixing" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="assembly_1_1" />
+<child link="lego_motors:_small_angular_motor_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="lego_motors:_small_angular_motor_2">
+<visual>
+<origin xyz="0.0659825 -0.0535169 0.00492998" rpy="-1.5708 0.57871 -3.14159" />
+<geometry>
+<mesh filename="package://electric,_motor_small_angular_-_spike_prime-_axle.stl"/>
+</geometry>
+<material name="electric,_motor_small_angular_-_spike_prime-_axle_material">
+<color rgba="0.317647 0.862745 0.921569 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0659825 -0.0535169 0.00492998" rpy="-1.5708 0.57871 -3.14159" />
+<geometry>
+<mesh filename="package://electric,_motor_small_angular_-_spike_prime-_axle.stl"/>
+</geometry>
+<material name="electric,_motor_small_angular_-_spike_prime-_axle_material">
+<color rgba="0.317647 0.862745 0.921569 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0.0659825 -0.0535169 0.00492998" rpy="1.5708 -0.57871 -1.07346e-31" />
+<geometry>
+<mesh filename="package://electric,_motor_small_angular_-_spike_prime.stl"/>
+</geometry>
+<material name="electric,_motor_small_angular_-_spike_prime_material">
+<color rgba="0.317647 0.862745 0.921569 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0659825 -0.0535169 0.00492998" rpy="1.5708 -0.57871 -1.07346e-31" />
+<geometry>
+<mesh filename="package://electric,_motor_small_angular_-_spike_prime.stl"/>
+</geometry>
+<material name="electric,_motor_small_angular_-_spike_prime_material">
+<color rgba="0.317647 0.862745 0.921569 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0542636 -0.0660316 0.0228672" rpy="0 0 0"/>
+<mass value="0.0358303" />
+<inertia ixx="1.46515e-05" ixy="4.62219e-07"  ixz="6.24441e-07" iyy="1.46444e-05" iyz="-8.35964e-07" izz="3.84556e-06" />
+</inertial>
+</link>
+
+<joint name="0782b20d-41d2-494e-b69c-b40690af0f38_fixing" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="assembly_1_1" />
+<child link="lego_motors:_small_angular_motor_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+
+</robot>
