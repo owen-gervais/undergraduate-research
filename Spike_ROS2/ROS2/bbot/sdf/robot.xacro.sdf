@@ -1,0 +1,941 @@
+<sdf version="1.6">
+
+    <model name="onshape">
+
+        <link name="sub_assembly_1">
+            <frame name="sub_assembly_1_frame">
+                <pose>0 0 0 0 -0 0</pose>
+            </frame>
+
+            <visual name="yellow_liftarm_visual_1">
+                <pose>0.0504342 -0.00726032 0.00726049 -1.5708 -0 -3.14159</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/yellow_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>1 0.831373 0.00392157 1</ambient>
+                    <diffuse>1 0.831373 0.00392157 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="yellow_liftarm_collision_1">
+                <pose>0.0504342 -0.00726032 0.00726049 -1.5708 -0 -3.14159</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/yellow_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="motor_visual_1">
+                <pose>-0.0421783 0.0121147 -0.00393881 1.5708 -0 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/motor.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.317647 0.862745 0.921569 1</ambient>
+                    <diffuse>0.317647 0.862745 0.921569 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="motor_collision_1">
+                <pose>-0.0421783 0.0121147 -0.00393881 1.5708 -0 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/motor.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="yellow_liftarm_visual_2">
+                <pose>-0.0495408 0.0392397 -0.0152145 1.5708 -0 -2.98447e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/yellow_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>1 0.831373 0.00392157 1</ambient>
+                    <diffuse>1 0.831373 0.00392157 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="yellow_liftarm_collision_2">
+                <pose>-0.0495408 0.0392397 -0.0152145 1.5708 -0 -2.98447e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/yellow_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="grey_connector_visual_1">
+                <pose>-0.0460533 0.0276147 -0.011727 3.14159 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/grey_connector.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.917647 0.917647 0.917647 1</ambient>
+                    <diffuse>0.917647 0.917647 0.917647 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="grey_connector_collision">
+                <pose>-0.0460533 0.0276147 -0.011727 3.14159 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/grey_connector.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_4_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>-0.00769083 0.000489677 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_4_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>-0.00769083 0.000489677 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_5_electric,_motor_small_angular_-_spike_prime-_axle_visual">
+                <pose>0.0430717 0.0121147 -0.00393881 -2.98447e-16 1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/axle.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.317647 0.862745 0.921569 1</ambient>
+                    <diffuse>0.317647 0.862745 0.921569 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_5_electric,_motor_small_angular_-_spike_prime-_axle_collision">
+                <pose>0.0430717 0.0121147 -0.00393881 -2.98447e-16 1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/axle.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_6_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>0.00780917 0.0237397 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_6_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>0.00780917 0.0237397 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_7_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>0.0465592 0.0237397 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_7_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>0.0465592 0.0237397 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_8_medium_azure_technic,_liftarm_1_x_13_thick__list_fou6qchbpsryai__1x13_visual">
+                <pose>-0.0499283 -0.00726032 0.0468237 -1.5708 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/azure_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.317647 0.862745 0.921569 1</ambient>
+                    <diffuse>0.317647 0.862745 0.921569 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_8_medium_azure_technic,_liftarm_1_x_13_thick__list_fou6qchbpsryai__1x13_collision">
+                <pose>-0.0499283 -0.00726032 0.0468237 -1.5708 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/azure_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_9_electric,_hub_-_spike_prime_visual">
+                <pose>0.000446674 0.0121147 -0.015602 0 -0 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/hub.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>1 0.831373 0.00392157 1</ambient>
+                    <diffuse>1 0.831373 0.00392157 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_9_electric,_hub_-_spike_prime_collision">
+                <pose>0.000446674 0.0121147 -0.015602 0 -0 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/hub.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_10_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>0.0430717 0.0276147 0.00377299 0 -0 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_10_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>0.0430717 0.0276147 0.00377299 0 -0 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_11_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>0.0465592 0.000489677 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_11_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>0.0465592 0.000489677 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_12_medium_azure_technic,_liftarm_1_x_13_thick__list_fou6qchbpsryai__1x13_visual">
+                <pose>-0.0499283 0.0314897 0.0537987 1.5708 1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/azure_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.317647 0.862745 0.921569 1</ambient>
+                    <diffuse>0.317647 0.862745 0.921569 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_12_medium_azure_technic,_liftarm_1_x_13_thick__list_fou6qchbpsryai__1x13_collision">
+                <pose>-0.0499283 0.0314897 0.0537987 1.5708 1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/azure_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_13_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>0.00780917 0.000489677 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_13_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>0.00780917 0.000489677 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_14_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>-0.0421783 0.0276147 -0.011727 3.14159 -0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_14_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>-0.0421783 0.0276147 -0.011727 3.14159 -0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_15_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>0.0430717 -0.00338532 0.00377299 0 -0 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_15_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>0.0430717 -0.00338532 0.00377299 0 -0 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_16_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>-0.0421783 0.0276147 0.00377299 3.14159 -0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_16_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>-0.0421783 0.0276147 0.00377299 3.14159 -0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_17_electric,_motor_small_angular_-_spike_prime-_axle_visual">
+                <pose>-0.0421783 0.0121147 -0.00393881 -1.5708 1.179 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/axle.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.317647 0.862745 0.921569 1</ambient>
+                    <diffuse>0.317647 0.862745 0.921569 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_17_electric,_motor_small_angular_-_spike_prime-_axle_collision">
+                <pose>-0.0421783 0.0121147 -0.00393881 -1.5708 1.179 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/axle.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_18_electric,_motor_small_angular_-_spike_prime_visual">
+                <pose>0.0430717 0.0121147 -0.00393881 1.5708 -0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/motor.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.317647 0.862745 0.921569 1</ambient>
+                    <diffuse>0.317647 0.862745 0.921569 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_18_electric,_motor_small_angular_-_spike_prime_collision">
+                <pose>0.0430717 0.0121147 -0.00393881 1.5708 -0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/motor.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_19_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>-0.0456658 0.000489677 0.0503112 3.14159 -0 4.37225e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_19_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>-0.0456658 0.000489677 0.0503112 3.14159 -0 4.37225e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_20_light_bluish_gray_technic,_pin_connector_perpendicular_3l_with_4_pins__list_vlfglxgn7wvleb_double_visual">
+                <pose>0.0469467 0.0276147 -0.011727 2.98447e-16 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/grey_connector.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.917647 0.917647 0.917647 1</ambient>
+                    <diffuse>0.917647 0.917647 0.917647 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_20_light_bluish_gray_technic,_pin_connector_perpendicular_3l_with_4_pins__list_vlfglxgn7wvleb_double_collision">
+                <pose>0.0469467 0.0276147 -0.011727 2.98447e-16 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/grey_connector.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_21_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>-0.00769083 0.0237397 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_21_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>-0.00769083 0.0237397 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_22_light_bluish_gray_technic,_pin_connector_perpendicular_3l_with_4_pins__list_vlfglxgn7wvleb_double_visual">
+                <pose>0.0469467 -0.00338532 -0.011727 2.98447e-16 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/grey_connector.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.917647 0.917647 0.917647 1</ambient>
+                    <diffuse>0.917647 0.917647 0.917647 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_22_light_bluish_gray_technic,_pin_connector_perpendicular_3l_with_4_pins__list_vlfglxgn7wvleb_double_collision">
+                <pose>0.0469467 -0.00338532 -0.011727 2.98447e-16 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/grey_connector.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_23_yellow_technic,_liftarm_1_x_3_thick__list_fou6qchbpsryai_default_visual">
+                <pose>-0.0495408 -0.0150103 0.00726049 -1.5708 -0 -2.98447e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/yellow_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>1 0.831373 0.00392157 1</ambient>
+                    <diffuse>1 0.831373 0.00392157 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_23_yellow_technic,_liftarm_1_x_3_thick__list_fou6qchbpsryai_default_collision">
+                <pose>-0.0495408 -0.0150103 0.00726049 -1.5708 -0 -2.98447e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/yellow_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_24_light_bluish_gray_technic,_pin_connector_perpendicular_3l_with_4_pins__list_vlfglxgn7wvleb_double_visual">
+                <pose>-0.0460533 -0.00338532 -0.011727 3.14159 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/grey_connector.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.917647 0.917647 0.917647 1</ambient>
+                    <diffuse>0.917647 0.917647 0.917647 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_24_light_bluish_gray_technic,_pin_connector_perpendicular_3l_with_4_pins__list_vlfglxgn7wvleb_double_collision">
+                <pose>-0.0460533 -0.00338532 -0.011727 3.14159 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/grey_connector.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_25_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>0.0430717 -0.00338532 -0.011727 0 -0 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_25_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>0.0430717 -0.00338532 -0.011727 0 -0 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_26_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>-0.0421783 -0.00338532 0.00377299 0 -0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_26_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>-0.0421783 -0.00338532 0.00377299 0 -0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_27_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>-0.0456658 0.0237397 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_27_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>-0.0456658 0.0237397 0.0503112 0 -0 1.59669e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_28_black_technic,_pin_connector_block,_liftarm_1_x_3_x_3__list_bgpzbimhbo5aqm_default_visual">
+                <pose>5.91737e-05 0.0121147 0.0503112 0 -0 -3.14159</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/square_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_28_black_technic,_pin_connector_block,_liftarm_1_x_3_x_3__list_bgpzbimhbo5aqm_default_collision">
+                <pose>5.91737e-05 0.0121147 0.0503112 0 -0 -3.14159</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/square_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_29_yellow_technic,_liftarm_1_x_3_thick__list_fou6qchbpsryai_default_visual">
+                <pose>0.0434592 0.0392397 -0.0152145 1.5708 -0 2.98447e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/yellow_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>1 0.831373 0.00392157 1</ambient>
+                    <diffuse>1 0.831373 0.00392157 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_29_yellow_technic,_liftarm_1_x_3_thick__list_fou6qchbpsryai_default_collision">
+                <pose>0.0434592 0.0392397 -0.0152145 1.5708 -0 2.98447e-16</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/yellow_liftarm.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_30_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>-0.0421783 -0.00338532 -0.011727 0 -0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_30_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>-0.0421783 -0.00338532 -0.011727 0 -0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <visual name="sub_assembly_1_31_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_visual">
+                <pose>0.0430717 0.0276147 -0.011727 0 -0 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.301961 0.301961 0.301961 1</ambient>
+                    <diffuse>0.301961 0.301961 0.301961 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+
+            <collision name="sub_assembly_1_31_black_technic,_pin_with_friction_ridges_lengthwise,_staggered,_with_or_without_center_slots__list_dfpbhpkcf6prph_default_collision">
+                <pose>0.0430717 0.0276147 -0.011727 0 -0 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/black_peg.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <inertial>
+                <pose frame="sub_assembly_1_frame">0.000450521 0.0121144 0.00756146 0 0 0</pose>
+                <mass>0.223026</mass>
+                <inertia>
+                    <ixx>9.27479e-05</ixx>
+                    <ixy>-9.46784e-09</ixy>
+                    <ixz>1.13638e-07</ixz>
+                    <iyy>0.000392533</iyy>
+                    <iyz>-6.97371e-10</iyz>
+                    <izz>0.00037412</izz>
+                </inertia>
+            </inertial>
+
+        </link>
+
+        <link name="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_1">
+            <frame name="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_1_frame">
+                <pose>0 0 0 0 -0 0</pose>
+            </frame>
+            <visual name="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_1_0_black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_visual">
+                <pose>0.0779467 0.0121147 -0.00393881 0 -2.98447e-16 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/wheel.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.317647 0.862745 0.921569 1</ambient>
+                    <diffuse>0.317647 0.862745 0.921569 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_1_0_black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_collision">
+                <pose>0.0779467 0.0121147 -0.00393881 0 -2.98447e-16 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/wheel.stl</uri>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode>
+                            <mu>0.9</mu>
+                            <mu2>0.65</mu2>
+                        </ode>
+                    </friction>
+                </surface>
+            </collision>
+            <inertial>
+                <pose frame="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_1_frame">0.0779467 0.0121147 -0.00393881 0 0 0</pose>
+                <mass>0.0154239</mass>
+                <inertia>
+                    <ixx>7.70244e-06</ixx>
+                    <ixy>-1.09604e-21</ixy>
+                    <ixz>-1.09604e-21</ixz>
+                    <iyy>4.02997e-06</iyy>
+                    <iyz>3.27109e-37</iyz>
+                    <izz>4.02997e-06</izz>
+                </inertia>
+            </inertial>
+        </link>
+
+        <joint name="wheelL" type="revolute">
+            <pose>0.0740717 0.0121147 -0.00393881 0 -2.98447e-16 -1.5708</pose>
+            <parent>sub_assembly_1</parent>
+            <child>black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_1</child>
+            <axis>
+                <xyz>0 1 0</xyz>
+                <limit>
+                    <effort>1</effort>
+                    <velocity>20</velocity>
+                </limit>
+            </axis>
+        </joint>
+
+        <link name="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_2">
+            <frame name="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_2_frame">
+                <pose>0 0 0 0 -0 0</pose>
+            </frame>
+            <visual name="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_2_0_black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_visual">
+                <pose>-0.0770533 0.0121147 -0.00393881 3.14159 -1.179 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/wheel.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.317647 0.862745 0.921569 1</ambient>
+                    <diffuse>0.317647 0.862745 0.921569 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_2_0_black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_collision">
+                <pose>-0.0770533 0.0121147 -0.00393881 3.14159 -1.179 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>file://$(find bbot)/meshes/wheel.stl</uri>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode>
+                            <mu>0.9</mu>
+                            <mu2>0.65</mu2>
+                        </ode>
+                    </friction>
+                </surface>
+            </collision>
+            <inertial>
+                <pose frame="black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_2_frame">-0.0770533 0.0121147 -0.00393881 0 0 0</pose>
+                <mass>0.0154239</mass>
+                <inertia>
+                    <ixx>4.56545e-06</ixx>
+                    <ixy>4.18521e-22</ixy>
+                    <ixz>1.29607e-06</ixz>
+                    <iyy>4.02997e-06</iyy>
+                    <iyz>1.01299e-21</iyz>
+                    <izz>7.16696e-06</izz>
+                </inertia>
+            </inertial>
+        </link>
+
+        <joint name="wheelR" type="revolute">
+            <pose>-0.0731783 0.0121147 -0.00393881 3.14159 -1.179 -1.5708</pose>
+            <parent>sub_assembly_1</parent>
+            <child>black_wheel_56_x_14_technic_with_axle_hole_and_8_pin_holes_with_fixed_medium_azure_rubber_tire_2</child>
+            <axis>
+                <xyz>0 -1 0</xyz>
+                <limit>
+                    <effort>1</effort>
+                    <velocity>20</velocity>
+                </limit>
+            </axis>
+        </joint>
+
+        <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+            <ros>
+                <namespace>/spike</namespace>
+            </ros>
+
+
+            <left_joint>wheelL</left_joint>
+            <right_joint>wheelR</right_joint>
+
+            <wheel_separation>0.085</wheel_separation>
+            <wheel_diameter>0.056</wheel_diameter>
+
+
+            <max_wheel_torque>15</max_wheel_torque>
+            <max_wheel_acceleration>1.0</max_wheel_acceleration>
+
+
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>sub_assembly_1</robot_base_frame>
+        </plugin>
+
+    </model>
+</sdf>
